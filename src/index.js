@@ -6,3 +6,14 @@ document.getElementById("app").innerHTML = `
 
 </div>
 `;
+
+let button = document.getElementById("submit-data");
+
+button.addEventListener("click", function () {
+  addForm;
+});
+
+function addForm(){
+  
+  
+}

@@ -177,6 +177,11 @@ module.hot.accept(reloadCSS);
 
 require("./styles.css");
 document.getElementById("app").innerHTML = "\n<h1></h1>\n<div>\n\n</div>\n";
+var button = document.getElementById("submit-data");
+button.addEventListener("click", function () {
+  addForm;
+});
+function addForm() {}
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
