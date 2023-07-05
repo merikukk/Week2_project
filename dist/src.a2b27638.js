@@ -183,7 +183,14 @@ function addedForm() {
   var username = document.getElementById("input-username").value;
   var email = document.getElementById("input-email").value;
   var address = document.getElementById("input-address").value;
-  var admin = document.querySelector("input-admin");
+  var adminCheck = document.getElementById("input-admin").checked;
+  var admin = function admin(adminCheck) {
+    if (adminCheck == true) {
+      return "X";
+    } else {
+      return "-";
+    }
+  };
   var table = document.getElementById("users");
   var row = table.insertRow(1);
   var cell1 = row.insertCell(0);
