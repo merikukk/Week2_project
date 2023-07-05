@@ -179,9 +179,24 @@ require("./styles.css");
 document.getElementById("app").innerHTML = "\n<h1></h1>\n<div>\n\n</div>\n";
 var button = document.getElementById("submit-data");
 button.addEventListener("click", function () {
-  addForm;
+  addedForm;
 });
-function addForm() {}
+function addedForm() {
+  var username = document.getElementById("input-username").value;
+  var email = document.getElementById("input-email").value;
+  var address = document.getElementById("input-address").value;
+  var admin = document.getElementById("input-admin").value;
+  var table = document.getElementById("users");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  cell1.innerHTML = username;
+  cell2.innerHTML = email;
+  cell3.innerHTML = address;
+  cell4.innerHTML = admin;
+}
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
