@@ -184,13 +184,8 @@ function addedForm() {
   var email = document.getElementById("input-email").value;
   var address = document.getElementById("input-address").value;
   var adminCheck = document.getElementById("input-admin").checked;
-  var admin = function admin(adminCheck) {
-    if (adminCheck == true) {
-      return "X";
-    } else {
-      return "-";
-    }
-  };
+  var admin;
+  adminCheck ? admin = "X" : admin = "-";
   var table = document.getElementById("users");
   var row = table.insertRow(1);
   var cell1 = row.insertCell(0);

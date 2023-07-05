@@ -16,13 +16,8 @@ function addedForm() {
   let email = document.getElementById("input-email").value;
   let address = document.getElementById("input-address").value;
   let adminCheck = document.getElementById("input-admin").checked;
-  let admin = function (adminCheck) {
-    if (adminCheck == true) {
-      return "X";
-    } else {
-      return "-";
-    }
-  };
+  let admin;
+  adminCheck ? (admin = "X") : (admin = "-");
 
   let table = document.getElementById("users");
 
