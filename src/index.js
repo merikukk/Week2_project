@@ -9,19 +9,18 @@ document.getElementById("app").innerHTML = `
 
 let button = document.getElementById("submit-data");
 
-button.addEventListener("click", function () {
-  addedForm;
-});
+button.addEventListener("click", addedForm);
 
 function addedForm() {
   let username = document.getElementById("input-username").value;
   let email = document.getElementById("input-email").value;
   let address = document.getElementById("input-address").value;
-  let admin = document.getElementById("input-admin").value;
+  let admin = document.querySelector("input-admin");
+  
 
   let table = document.getElementById("users");
 
-  let row = table.insertRow(0);
+  let row = table.insertRow(1);
 
   let cell1 = row.insertCell(0);
   let cell2 = row.insertCell(1);
