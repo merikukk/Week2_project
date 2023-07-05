@@ -33,3 +33,14 @@ function addedForm() {
   cell3.innerHTML = address;
   cell4.innerHTML = admin;
 }
+
+let button2 = document.getElementById("empty-table");
+
+button2.addEventListener("click", deleteForm);
+
+function deleteForm() {
+  let table = document.getElementById("users");
+  while (table.rows.length > 1) {
+    table.deleteRow(1);
+  }
+}

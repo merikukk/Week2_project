@@ -197,6 +197,14 @@ function addedForm() {
   cell3.innerHTML = address;
   cell4.innerHTML = admin;
 }
+var button2 = document.getElementById("empty-table");
+button2.addEventListener("click", deleteForm);
+function deleteForm() {
+  var table = document.getElementById("users");
+  while (table.rows.length > 1) {
+    table.deleteRow(1);
+  }
+}
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
