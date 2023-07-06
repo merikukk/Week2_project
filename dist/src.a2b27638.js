@@ -201,7 +201,7 @@ var button2 = document.getElementById("empty-table");
 button2.addEventListener("click", deleteForm);
 function deleteForm() {
   var table = document.getElementById("users");
-  log.console("All data deleted");
+  console.log("All data deleted");
   while (table.rows.length > 1) {
     table.deleteRow(1);
   }
