@@ -40,6 +40,7 @@ button2.addEventListener("click", deleteForm);
 
 function deleteForm() {
   let table = document.getElementById("users");
+  log.console("All data deleted");
   while (table.rows.length > 1) {
     table.deleteRow(1);
   }
